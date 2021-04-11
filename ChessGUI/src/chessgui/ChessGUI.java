@@ -1,9 +1,5 @@
 package chessgui;
 
-/**
- *
- * @author Paul Soderquist
- */
 public class ChessGUI {
     
     public BoardFrame boardframe;

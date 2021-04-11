@@ -5,13 +5,13 @@ import chessgui.Board;
 public class Piece {
     private int x;
     private int y;
-    final private boolean is_white;
+    final private boolean white;
     private String file_path;
     public Board board;
     
-    public Piece(int x, int y, boolean is_white, String file_path, Board board)
+    public Piece(int x, int y, boolean white, String file_path, Board board)
     {
-        this.is_white = is_white;
+        this.white = white;
         this.x = x;
         this.y = y;
         this.file_path = file_path;
@@ -30,12 +30,12 @@ public class Piece {
     
     public boolean isWhite()
     {
-        return is_white;
+        return white;
     }
     
     public boolean isBlack()
     {
-        return !is_white;
+        return !white;
     }
     
     public void setX(int x)
